@@ -1,0 +1,93 @@
+body {
+    text-align: center;
+    margin-top: 200px;
+    padding-left: 37%;
+    background-image: url('../images/tt.jpg');
+
+    background-size: cover;
+
+
+}
+
+.form-container {
+    display: flex;
+    /* مهم جدًا لتفعيل Flexbox */
+    flex-direction: column;
+    /* نخلي العناصر عمودية */
+    justify-content: space-between;
+    /* يوزع العناصر بالتساوي عموديًا */
+    background-color: #ffffff;
+    padding: 33px;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+
+    input[type="text"],
+    input[type="password"] {
+        border: none;
+        border-bottom: 2px solid #cac3c3;
+        /* الخط السفلي فقط */
+
+        /* يشيل الخطوط */
+        outline: none;
+        /* يشيل حدود التركيز */
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background: linear-gradient(to right, orange, red);
+        border-radius: 15%;
+        border:none;
+        width: 200px;
+        height: 30px;
+        margin-left: 40px;
+        cursor: pointer;          
+
+    }
+
+
+}
+
+.checkbox-container {
+    display: flex;
+    /* يحط العناصر جنب بعض */
+    gap: 10px;
+    color: gray;
+}
+
+/* حاوية الأيقونات */
+.social-icons {
+    display: flex;
+    justify-content: center; /* كل أيقونة على طرف */
+    width: 100%;                    /* تمتد بعرض الفورم */
+    margin-bottom: 20px;
+    gap:20px
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(to right, orange, red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;  /* لون الأيقونة */
+    font-size: 24px;
+}
+
+
+.facebook {
+    background: linear-gradient(to right, orange, red);
+}
+
+.twitter {
+    background: linear-gradient(to right, orange, red);
+}
+
+.linkedin {
+    background: linear-gradient(to right, orange, red);
+}
